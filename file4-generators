@@ -1,0 +1,14 @@
+<?php
+
+//Generators use less spaxce than regular for loops
+function makeRange($length) {
+    for ($i = 0; $i < $length; $i++) {
+        yield $i;
+    }
+}
+
+foreach (makeRange(10000) as $i) 
+{ 
+    echo $i . "\n";
+}
+?>

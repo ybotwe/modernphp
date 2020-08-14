@@ -1,0 +1,9 @@
+<?php
+
+$name = "Py";
+$greet = function () use ($name){
+   echo "Hello there, $name";
+};
+
+$greet();
+?>
